@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import mypic from '../public/profile.jpg'
+import mypic from '../public/profile.JPG'
 import {AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai';
 
 export default function Home() {
