@@ -1,0 +1,284 @@
+$background-color: rgb(55, 55, 55);
+$title-color: #ff6868;
+$title-light-color: #ffa2a2;
+
+.container {
+  background-color: $background-color;
+  color: #eaeaea;
+}
+
+.content{
+  padding: 3rem 0 0 8rem;
+}
+
+.main {
+  min-height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.main section{
+  padding: 4rem 0;
+}
+
+.footer {
+  padding: 0 8rem;
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a, .titleName a, .titleJob a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.titleName, .titleJob{
+  text-align: left;
+  margin: 0 0 0 1%;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.titleName{
+  color: $title-color
+}
+
+.titleJob{
+  color: $title-light-color
+}
+
+.smallTitle
+ {
+  margin: 0 0 0 0;
+  text-align: left;
+  font-size: 1rem;
+  color:#eaeaea
+}
+
+.description {
+  text-align: left;
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: rgb(255, 255, 255);
+  color: $background-color;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.verticalList{
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  right: auto;
+  z-index: 10;
+
+  counter-reset: list;
+  margin: 1em 1em 0 1em;
+  padding: 0;
+}
+
+.verticalList li {
+  list-style: none;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+.verticalList::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150px;
+    margin: 0px auto;
+    background-color: #eaeaea;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.headerBar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0px 50px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 12;
+}
+
+.navbar li {
+  list-style: none;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  color:#ff6868;
+  font-size: 1rem;
+}
+
+/* Colored Text Animation*/
+.wrapperColoredText {
+  position: relative;
+  width: 600px;
+  /* font-family: 'Arial', sans-serif; */
+  /* font-size: 24px; */
+  margin: 0 0 0 1%;
+  line-height: 1.15;
+  font-size: 4rem;
+  font-weight: bold;
+  background: rgb(55, 55, 55);
+}
+
+.fillColoredText {
+  width: 600px;
+}
+
+.coloredText {
+  display: grid;
+  justify-content: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  word-break: keep-all;
+  width: 0;
+  color: $title-color;
+  transition: 5s width ease-in-out;
+}
+
+.basicText {
+  width: 600px;
+  color: white;
+}
+
+.wrapperColoredText .coloredText {
+  width: 600px;
+  transition: 5s width ease-in-out;
+}
+
+/* Colored Text Animation*/
+.wrappedAnimationText{
+  margin: 0 0 0 1%;
+  line-height: 1.15;
+  font-size: 4rem;
+  font-weight: 800;
+
+  position: relative;
+  display: inline-block;
+  color: $title-light-color;
+  overflow: hidden;
+  .animationText {
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 3s ease;
+    &::before {
+      display: inline-block;
+      content: attr(data-content);
+      //color to be filled
+      color: $title-color;
+      transform: translateX(100%);
+      transition: transform 3s ease;
+      // text-decoration: underline;
+    }
+  }
+  &:hover {
+    .animationText {
+      transform: translateX(0);
+      &::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.animationText{
+
+}
+
+
