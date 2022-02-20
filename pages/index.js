@@ -37,19 +37,8 @@ export default function Home() {
               Hi, my name is
             </h4>
 
-            <div className={styles.wrapperColoredText}>
-              <div className={styles.fillColoredText}>
-                <div className={styles.coloredText}>
-                Michael_Bazzanti
-                </div>
-              </div>
-              <div className={styles.basicText}>
-               Michael_Bazzanti
-              </div>
-            </div>
-
             <div className={styles.wrappedAnimationText }>
-              <span data-content="Michael Bazzanti" className={styles.animationText }>
+              <span data-content="Michael Bazzanti" aria-hidden="true" className={styles.animationText }>
               </span>
               Michael Bazzanti
             </div>
@@ -58,9 +47,12 @@ export default function Home() {
               and I am a 
             </h4>
 
-            <h1 className={styles.titleJob}>
+            <div className={styles.wrappedAnimationText }>
+              <span data-content="Fullstack_Developer" aria-hidden="true" className={styles.animationText }>
+              </span>
               Fullstack_Developer
-            </h1>
+            </div>
+
 
             <p className={styles.description}>
               I love discovering new {' '} 

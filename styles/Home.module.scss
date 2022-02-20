@@ -199,85 +199,50 @@ $title-light-color: #ffa2a2;
 }
 
 /* Colored Text Animation*/
-.wrapperColoredText {
-  position: relative;
-  width: 600px;
-  /* font-family: 'Arial', sans-serif; */
-  /* font-size: 24px; */
-  margin: 0 0 0 1%;
-  line-height: 1.15;
-  font-size: 4rem;
-  font-weight: bold;
-  background: rgb(55, 55, 55);
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.fillColoredText {
-  width: 600px;
+@keyframes slideFromLeftBefore {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.coloredText {
-  display: grid;
-  justify-content: start;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  word-break: keep-all;
-  width: 0;
-  color: $title-color;
-  transition: 5s width ease-in-out;
-}
-
-.basicText {
-  width: 600px;
-  color: white;
-}
-
-.wrapperColoredText .coloredText {
-  width: 600px;
-  transition: 5s width ease-in-out;
-}
-
-/* Colored Text Animation*/
 .wrappedAnimationText{
   margin: 0 0 0 1%;
   line-height: 1.15;
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: bold;
 
   position: relative;
   display: inline-block;
   color: $title-light-color;
   overflow: hidden;
+
   .animationText {
-  
+    animation: 3s ease 0s 1 slideFromLeft;
+
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
-    transform: translateX(-100%);
-    transition: transform 3s ease;
     &::before {
+      animation: 3s ease 0s 1 slideFromLeftBefore;
       display: inline-block;
       content: attr(data-content);
-      //color to be filled
       color: $title-color;
-      transform: translateX(100%);
-      transition: transform 3s ease;
-      // text-decoration: underline;
     }
   }
-  &:hover {
-    .animationText {
-      transform: translateX(0);
-      &::before {
-        transform: translateX(0);
-      }
-    }
-  }
-}
-
-.animationText{
 
 }
 
