@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import mypic from '../public/profile.jpg'
+import {AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai';
 
 export default function Home() {
 
@@ -25,8 +26,12 @@ export default function Home() {
       
       <div orientation="left">
         <ul className={styles.verticalList}>
-          <li> email</li>
-          <li> linkedin</li>
+          <li className={styles.listIcon}> 
+            <a href="mailto:michael6993@msn.com">  <AiOutlineMail /> </a>
+          </li>
+          <li className={styles.listIcon}> 
+            <a href="https://www.linkedin.com/in/michael-bazzanti-589221129/"> <AiOutlineLinkedin /> </a>
+          </li>
         </ul>
       </div>
 
@@ -50,9 +55,9 @@ export default function Home() {
                 </h4>
 
                 <div className={styles.wrappedAnimationText }>
-                  <span data-content="Fullstack_Developer" aria-hidden="true" className={styles.animationText }>
+                  <span data-content="Software Developer" aria-hidden="true" className={styles.animationText }>
                   </span>
-                  Fullstack_Developer
+                  Software Developer
                 </div>
 
 
@@ -75,6 +80,8 @@ export default function Home() {
               </div>
             </div>
           </section> 
+          <section id="me">
+          </section>
 
         </main>
 
