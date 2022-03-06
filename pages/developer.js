@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from './developer.module.scss'
+import styles from '../styles/developer.module.scss'
 import Image from 'next/image'
 import mypic from '/public/profilee.jpg'
 import {AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai';
@@ -7,7 +7,7 @@ import {AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai';
 export default function Developer() {
 
     return (
-        <div className={styles.container}>
+      <div className={styles.container}>
         <Head>
           <title>Michael Bazzanti</title>
           <meta name="description" content="Michael Bazzanti website" />
