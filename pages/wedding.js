@@ -14,24 +14,21 @@ export default function Wedding() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-
-            <div className={styles.title}>
-                {/* guarda la mail con save the date */}
-                <span>
-                You're invited to the wedding of
-
+            <div className={styles.divtitle}>
+                <span className={styles.subtitle}>
+                    {/* You're invited to the wedding of */}
+                    SAVE THE DATE
                 </span>
-                <br></br>
 
-                <span>
-                    Zoey Wilson &amp; Michael Bazzanti
+                <span className={styles.maintitle}>
+                    Zoey Wilson + Michael Bazzanti
                 </span>
-                <br></br>
-                <span>
-                    August 6th, 2022
+
+                <span className={styles.subtitle}>
+                    AUG | 6 | 2022
                 </span>
-                <br></br>
-                <span>
+
+                <span className={styles.subtitle}>
                     Cortona, Italy
                 </span>
 

@@ -3,18 +3,28 @@
     background: radial-gradient(ellipse at bottom, #2c4766 0%, #090a0f 100%);
     overflow: hidden;
   }
-  
-  .title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: Florence;
-    font-weight: 300;
-    font-size: 50px;
-    letter-spacing: 10px;
-    margin-top: -60px;
-    padding-left: 10px;
-  }
+
+.divtitle {
+  margin: 10% 0 0 0;
+  color: #FFF;
+  text-align: center;
+  font-family: serif, sans-serif, arial;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+
+.maintitle {
+  margin: 2% 0 5% 0;
+  display: block;
+  font-weight: 300;
+  font-size: 64px;
+  letter-spacing: 10px;
+}
+
+.subtitle {
+  margin: 0 0 1% 0;
+  display: block;
+  font-weight: 0;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
