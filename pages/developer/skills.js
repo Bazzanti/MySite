@@ -14,7 +14,7 @@ export default function Skills() {
         },
         Systems: { 
             items: ["Git", "Azure Devops"] 
-        },
+        }
     };
     return (
         <div>
@@ -25,12 +25,12 @@ export default function Skills() {
                 {
                 Object.keys(skills).map(skill_name => {
                     return (
-                    <div className={styles.column}>
-                        <div className={styles.card}>
-                            <h2>{skill_name}</h2>
+                    <div className={styles.column} key={skill_name}>
+                        <div className={styles.card} key={skill_name}>
+                            <h2 key={skill_name}>{skill_name}</h2>
                             {
                             skills[skill_name].items.map(item => {
-                                return(<p>{item}</p>)
+                                return(<p key={item}>{item}</p>)
                             })
                             }
                         </div>
