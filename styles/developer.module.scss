@@ -2,6 +2,7 @@ $background-color: rgb(55, 55, 55);
 $title-color: #ff6868;
 $title-light-color: #ffa2a2;
 
+// Main container
 .container {
   background-color: $background-color;
   color: #eaeaea;
@@ -21,29 +22,24 @@ $title-light-color: #ffa2a2;
   /* align-items: center; */
 }
 
+// Section + title + description
 .main section{
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+.description {
+  text-align: left;
+  margin: 1rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+.titleSection{
+  color: $title-color;
+  font-size: 4rem;
 }
 
-.center{
-  margin: 0 10% 0 0%;
-  align-items: center;
-}
-
+// Footer
 .footer {
   padding: 0 8rem;
   display: flex;
@@ -54,22 +50,32 @@ $title-light-color: #ffa2a2;
   align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
+// .footer a {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-grow: 1;
+// }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
+// .grid {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   max-width: 800px;
+// }
+
+// @media (max-width: 600px) {
+//   .grid {
+//     width: 100%;
+//     flex-direction: column;
+//   }
+// }
+
+// Card
 
 .card {
+  background-color: rgb(82, 82, 82);;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
@@ -84,8 +90,8 @@ $title-light-color: #ffa2a2;
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: $title-light-color;
+  border-color: $title-light-color;
 }
 
 .card h2 {
@@ -99,17 +105,26 @@ $title-light-color: #ffa2a2;
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+// Row and Columns
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 0.2;
 }
+
+
+// .logo {
+//   height: 1em;
+//   margin-left: 0.5rem;
+// }
 
 
 

@@ -3,6 +3,8 @@ import styles from '../styles/developer.module.scss'
 import Me from './developer/me.js'
 import Header from './developer/header.js'
 import LeftBar from './developer/leftBar.js'
+import Skills from './developer/skills.js'
+import About from './developer/about.js'
 
 export default function Developer() {
 
@@ -22,7 +24,11 @@ export default function Developer() {
             <section id="me">
               <Me></Me>
             </section> 
-            <section id="me2">
+            <section id="about">
+              <About></About>
+            </section>
+            <section id="skill">
+              <Skills></Skills>
             </section>
   
           </main>

@@ -1,5 +1,5 @@
 import styles from '/styles/leftBar.module.scss'
-import {AiOutlineMail, AiOutlineLinkedin} from 'react-icons/ai';
+import {AiOutlineMail, AiOutlineLinkedin, AiOutlineGithub} from 'react-icons/ai';
 
 export default function LeftBar() {
 
@@ -11,6 +11,9 @@ export default function LeftBar() {
             </li>
             <li className={styles.listIcon}> 
               <a href="https://www.linkedin.com/in/michael-bazzanti-589221129/"> <AiOutlineLinkedin /> </a>
+            </li>
+            <li className={styles.listIcon}> 
+              <a href="https://github.com/Bazzanti"> <AiOutlineGithub /> </a>
             </li>
           </ul>
         </div>
