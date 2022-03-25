@@ -1,0 +1,33 @@
+
+.verticalList{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    right: auto;
+    z-index: 10;
+  
+    counter-reset: list;
+    margin: 1em 1em 0 1em;
+    padding: 0;
+  }
+  
+  .listIcon{
+    font-size: 24px; 
+    text-align: center;
+  }
+  
+  .verticalList li {
+    list-style: none;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+  }
+  
+  .verticalList::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 150px;
+      margin: 0px auto;
+      background-color: #eaeaea;
+  }
