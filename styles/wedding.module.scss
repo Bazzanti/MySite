@@ -8,7 +8,7 @@ $medium: 800px;
   }
 
 .divtitle {
-  margin: 10% 0 0 0;
+  margin: 5% 0 0 0;
   color: #FFF;
   text-align: center;
   font-family: serif, sans-serif, arial;
@@ -20,13 +20,19 @@ $medium: 800px;
   }
 }
 
-.maintitle {
+.divmaintitle{
   margin: 2% 0 5% 0;
+  @media screen and (max-width: $medium) {
+    margin: 5% 0 10% 0;
+    font-size: 32px;
+  }
+}
+
+.maintitle {
   display: block;
   font-size: 64px;
   letter-spacing: 10px;
   @media screen and (max-width: $medium) {
-    margin: 5% 0 10% 0;
     font-size: 32px;
   }
 

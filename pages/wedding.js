@@ -20,12 +20,22 @@ export default function Wedding() {
                     SAVE THE DATE
                 </span>
 
-                <span className={styles.maintitle}>
-                    Zoey Wilson + Michael Bazzanti
-                </span>
+                <div className={styles.divmaintitle}>
+                    <span className={styles.maintitle}>
+                        Zoey Wilson
+                    </span>
+
+                    <span className={styles.maintitle}>
+                        +
+                    </span>
+
+                    <span className={styles.maintitle}>
+                        Michael Bazzanti
+                    </span>
+                </div>
 
                 <span className={styles.subtitle}>
-                    AUG | 6 | 2022
+                    AUG | 6 | 2022 - 18:00
                 </span>
 
                 <span className={styles.subtitle}>
