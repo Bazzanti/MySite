@@ -29,8 +29,13 @@ export default function Skills() {
                         <div className={styles.card} key={skill_name}>
                             <h2 key={skill_name}>{skill_name}</h2>
                             {
-                            skills[skill_name].items.map(item => {
-                                return(<p key={item}>{item}</p>)
+                            skills[skill_name].items.map((item,index) => {
+                                return(
+                                    <div key={item+index}>
+                                        {index > 0 ? <hr className={styles.hrLeft}></hr> :  null}
+                                        <p>{item}</p>
+                                    </div>
+                                )
                             })
                             }
                         </div>
