@@ -6,6 +6,8 @@ $medium: 800px;
 
 // Main container
 .container {
+  min-width: 75vh;
+
   background-color: $background-color;
   color: #eaeaea;
 }
