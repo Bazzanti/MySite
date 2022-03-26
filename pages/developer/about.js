@@ -9,10 +9,10 @@ export default function About() {
             </div>
             <div className={styles.descriptionDivSection}>
                 <span className={styles.description}>
-                    I'm a Software Developer graduated in Mathematics; I'm passionate about programming and I love 
+                    I&apos;m a Software Developer graduated in Mathematics; I&apos;m passionate about programming and I love 
                     creating innovative solutions. <br></br>
                     Well-versed in .NET and Angular, but I also have experiences in many
-                    more technologies and frameworks because I'm always looking for new challenges and 
+                    more technologies and frameworks because I&apos;m always looking for new challenges and 
                     opportunities to learn and grow. <br></br>
                     I am confident in my problem-solving abilities to overcome problems with creative solutions 
                     that are strategically designed to last long-term. 

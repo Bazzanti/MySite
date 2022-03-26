@@ -3,4 +3,7 @@
 
 .descriptionDivSection{
     width: 70%;
+    @media screen and (max-width: $medium) {
+        width: 90%;
+    }
 }

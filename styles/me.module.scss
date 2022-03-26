@@ -12,6 +12,9 @@
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+    @media screen and (max-width: $medium) {
+        flex: 100%;
+      }
 }
 
 .image{
