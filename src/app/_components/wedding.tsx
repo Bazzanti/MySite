@@ -68,7 +68,6 @@ export default function Wedding() {
                         duration: 0.3,
                         opacity: 1,
                         size: 3,
-                        speed: 1
                     },
                     grab: { distance: 400, line_linked: { opacity: 0.5 } },
                     push: { particles_nb: 4 },

@@ -1,15 +1,14 @@
 import Head from 'next/head'
-import styles from '../styles/developer.module.scss'
-import Me from './developer/me.js'
-import Header from './developer/header.js'
-import LeftBar from './developer/leftBar.js'
-import Skills from './developer/skills.js'
-import About from './developer/about.js'
+import Header from './header.tsx'
+import LeftBar from './leftBar.tsx'
+import Skills from './skills.tsx'
+import About from './about.tsx'
+import Me from './me.tsx'
 
 export default function Developer() {
 
     return (
-      <div className={styles.container}>
+      <div className="min-w-[75vh] bg-[rgb(55,_55,_55)] text-[#eaeaea]      ">
         <Head>
           <title>Michael Bazzanti</title>
           <meta name="description" content="Michael Bazzanti website" />
@@ -17,10 +16,10 @@ export default function Developer() {
         </Head>
   
         <Header></Header>
-        <LeftBar></LeftBar>
+        <LeftBar></LeftBar> 
   
-        <div className={styles.content} >
-          <main className={styles.main} >
+        <div className="pt-12 pr-[0] pb-[0] pl-32 min-h-screen" >
+          <main className="min-h-[80vh] flex-[1] flex flex-col" >
             <section id="me">
               <Me></Me>
             </section> 
@@ -33,7 +32,7 @@ export default function Developer() {
   
           </main>
   
-          <footer className={styles.footer}>
+          <footer className="px-32 py-[0] flex flex-[1] px-[0] py-8 border-t-[1px_solid_#eaeaea] justify-center items-center">
               Designed and built by Michael Bazzanti
               {/* <span className={styles.logo}>
                 <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
