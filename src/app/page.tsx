@@ -1,4 +1,4 @@
-import Developer from './developer';
+import Developer from './_components/developer';
 
 export default function Home() {
 
