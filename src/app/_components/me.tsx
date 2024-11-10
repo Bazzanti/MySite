@@ -9,7 +9,7 @@ export default function Me() {
           Hi, I&#39;m
         </h4>
 
-        <div className=" leading-[1.15] text-[4rem] font-[bold] relative inline-block text-[$title-light-color] overflow-hidden ml-[1%] mr-0 my-5">
+        <div className=" leading-[1.15] text-[4rem] font-bold relative inline-block text-[$title-light-color] overflow-hidden ml-[1%] mr-0 my-5">
           <span
             data-content="Michael Bazzanti"
             aria-hidden="true"
@@ -22,7 +22,7 @@ export default function Me() {
           and I am a
         </h4>
 
-        <div className=" leading-[1.15] text-[4rem] font-[bold] relative inline-block text-[$title-light-color] overflow-hidden ml-[1%] mr-0 my-5">
+        <div className=" leading-[1.15] text-[4rem] font-bold relative inline-block text-[$title-light-color] overflow-hidden ml-[1%] mr-0 my-5">
           <span
             data-content="Software Developer"
             aria-hidden="true"
